@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 from addresses_of_files import excel_table_adress
@@ -27,11 +28,14 @@ def data_defragmentation():
     global df_list 
     df_list = df.to_dict('list')
 
+    global DATES
+    DATES = df_list['Date']
+
     return 0
 
 def seats_popularity():
 
-
+    
 
     return 0
 
@@ -89,7 +93,36 @@ def sessions_popularity():
 
 def number_of_visitors():
 
+    calendar = []
 
+    for month in range(6, 10):
+        if month in [6, 9, 11]:
+            for day in range(1, 30 + 1):
+                date = f'{day}/{month}/2022'
+                if date in DATES:
+                    calendar.append(date)
+        else:
+            for day in range(1, 31 + 1):
+                date = f'{day}/{month}/2022'
+                if date in DATES:
+                    calendar.append(date)
+
+    values = []
+
+    for i in calendar:
+        values.append(DATES.count(i))
+
+
+
+    plt.plot(calendar, values)
+
+    plt.ylabel('Number of visitor per a day')
+    
+    plt.xlabel('Dates')
+
+    plt.title('Visitor growth chart')
+
+    plt.show()
 
     return 0
 
@@ -125,6 +158,12 @@ def main():
     genres_popularity()
 
     fimls_popularity()
+
+    # seats_popularity()
+    
+    # sessions_popularity()
+
+    number_of_visitors()
 
     return 0
 
