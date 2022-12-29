@@ -1,2 +1,17 @@
-excel_table_adress = '/Users/gamzatshakhmanaev/Documents/Projects/SandBox/big data/lab1/table.xlsx'
-access_table_adress = ''
+excel_table_adress = ''
+
+FirstNames_adress = ''
+
+MiddleNames_adress = ''
+
+LastNames_adress = ''
+
+CountyNames_adress = ''
+
+PlacesNames_adress = ''
+
+StateNames_adress = ''
+
+CountryNames_adress = ''
+
+CompanyNames_adress = ''
