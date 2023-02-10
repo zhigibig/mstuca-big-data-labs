@@ -2,15 +2,16 @@
 # -*- coding: utf-8 -*-
 import random
 import string
+from addresses_of_files import FirstNames_adress, MiddleNames_adress, LastNames_adress, CountyNames_adress, PlacesNames_adress, StateNames_adress, CountryNames_adress, CompanyNames_adress
 
-FirstNames    = '/Users/gamzatshakhmanaev/Documents/Projects/SandBox/big data/lab1/Names/FirstNames.txt'
-MiddleNames   = '/Users/gamzatshakhmanaev/Documents/Projects/SandBox/big data/lab1/Names/MiddleNames.txt'
-LastNames     = '/Users/gamzatshakhmanaev/Documents/Projects/SandBox/big data/lab1/Names/LastNames.txt'
-CountyNames   = '/Users/gamzatshakhmanaev/Documents/Projects/SandBox/big data/lab1/Names/CountyNames.txt'
-PlaceNames    = '/Users/gamzatshakhmanaev/Documents/Projects/SandBox/big data/lab1/Names/PlaceNames.txt'
-StateNames    = '/Users/gamzatshakhmanaev/Documents/Projects/SandBox/big data/lab1/Names/StateNames.txt'
-CountryNames  = '/Users/gamzatshakhmanaev/Documents/Projects/SandBox/big data/lab1/Names/CountryNames.txt'
-CompanyNames  = '/Users/gamzatshakhmanaev/Documents/Projects/SandBox/big data/lab1/Names/CompanyNames.txt'
+FirstNames    = FirstNames_adress
+MiddleNames   = MiddleNames_adress
+LastNames     = LastNames_adress
+CountyNames   = CountyNames_adress
+PlaceNames    = PlacesNames_adress
+StateNames    = StateNames_adress
+CountryNames  = CountryNames_adress
+CompanyNames  = CompanyNames_adress
 
 
 
